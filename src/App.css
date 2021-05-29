@@ -1,0 +1,56 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  /* font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace; */
+}
+
+.App {
+  text-align: center;
+}
+.Videos-container {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1rem;
+  min-width: 15rem;
+}
+
+@media (max-width: 1200px) {
+  .Videos-container {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 800px) {
+  .Videos-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 500px) {
+  .Videos-container {
+    grid-template-columns: 1fr;
+  }
+}
+
+.our-cards {
+  height: 20rem;
+  width: 16rem;
+  margin-left: 22%;
+  margin-bottom: 2rem;
+}
+/* .videos-container {
+  background-color: red;
+  width: 50rem;
+  margin-left: 20rem;
+} */
+.our-button {
+  margin-top: 2rem;
+  background-color: cadetblue;
+  border: 2px solid green;
+}
+
+.modal-button {
+  margin-top: 1rem;
+}

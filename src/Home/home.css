@@ -1,0 +1,81 @@
+.container {
+  background-color: aqua;
+}
+.tour-title {
+  margin-top: 1rem;
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+}
+
+.first-one {
+  border-radius: 5%;
+  height: 10rem;
+  width: 18rem;
+  border: 1px solid black;
+  background-size: 100% 100%;
+  background-image: url(./images.jpg);
+}
+.first-one h3 {
+  position: relative;
+  top: 30%;
+  color: white;
+}
+.second-one {
+  border-radius: 5%;
+  height: 10rem;
+  width: 18rem;
+  border: 1px solid black;
+  background-size: 100% 100%;
+  background-image: url(./wp2069204.jpg);
+}
+
+.second-one h3 {
+  position: relative;
+  top: 30%;
+  color: white;
+}
+
+.third-one {
+  border-radius: 5%;
+  height: 10rem;
+  width: 18rem;
+  border: 1px solid black;
+  background-size: 100% 100%;
+  background-image: url(./Help.jpg);
+}
+
+.third-one h3 {
+  position: relative;
+  top: 30%;
+  color: white;
+}
+
+.fourth-one {
+  background-image: url(./gps.jpg);
+  border-radius: 5%;
+  height: 10rem;
+  width: 18rem;
+  border: 1px solid black;
+  background-size: 100% 100%;
+}
+
+.fourth-one h3 {
+  position: relative;
+  top: 30%;
+}
+
+.content {
+  margin-left: 18%;
+  padding: 10px 1px;
+  height: 100vh;
+}
+
+.contents {
+  margin-left: 12%;
+  margin-top: 4rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-row-gap: 8rem;
+}
