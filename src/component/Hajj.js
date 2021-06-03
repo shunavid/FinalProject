@@ -1,9 +1,9 @@
 import React from "react";
-
+import { Button, Form, FormGroup, Input, Label, FormText } from "reactstrap";
 function Hajj() {
   return (
     <div>
-      <h1>More infos....about</h1>
+      <Button>test button</Button>
     </div>
   );
 }

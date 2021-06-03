@@ -1,0 +1,19 @@
+.attendance {
+  height: 90vh;
+  width: 65%;
+  display: flex;
+  margin-left: 20%;
+}
+
+.head-list {
+  color: black;
+  margin-top: 2rem;
+}
+
+.travels-list {
+  margin-top: 4rem;
+  background-color: #c8c8c8;
+  border-radius: 5%;
+  margin-left: 10rem;
+  width: 70%;
+}

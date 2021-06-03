@@ -11,14 +11,19 @@ import Gps from "./component/Gps";
 import Help from "./component/Help";
 import Hajj from "./component/Hajj";
 import Umrah from "./component/Umrah";
+// import ImageCarousel from "./component/ImageCarousel";
+// import InfoVideos from "./component/InfoVideos";
 
 function App() {
   const [articles, setArticles] = useState([]);
+
   useEffect(() => {
     client
       .getEntries()
       .then((response) => {
         const { items } = response;
+        console.log(items);
+        // console.log(items[0].fields.image[0].fields.file.url);
         setArticles(items);
       })
       .catch(console.error);
@@ -58,3 +63,4 @@ function App() {
   );
 }
 export default App;
+// { "metadata.tags.sys.id[in]": "tagOne,tagTwo" }

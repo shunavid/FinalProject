@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import {
   Card,
-  CardImg,
   CardBody,
   CardTitle,
   Button,
@@ -10,6 +9,8 @@ import {
   ModalBody,
   ModalFooter,
 } from "reactstrap";
+import InfoVideos from "./InfoVideos";
+import ImageCarousel from "./ImageCarousel";
 
 function Post({ article }) {
   const [modal, setModal] = useState(false);
@@ -20,19 +21,17 @@ function Post({ article }) {
   const toggle = () => setModal(!modal);
 
   const handleModal = (title, content) => {
+    console.log("content", content);
     setModalTitle(title);
     setModalContent(content);
     toggle();
   };
 
   return (
-    <div className="videos-container mb-5">
+    <div className="videos-container ">
       <Card className="our-cards">
-        <CardBody
-          style={{ backgroundColor: "cadetblue" }}
-          className="bg-primary rounded-lg modal-lg"
-        >
-          <div className="card-content-top">
+        <CardBody className=" bg-secondary rounded-lg modal-lg   ">
+          <div className="card-content-top mt-6 ">
             <CardTitle tag="h5" className="mb-2 pt-3">
               {name}
             </CardTitle>
@@ -49,10 +48,7 @@ function Post({ article }) {
             style={{ backgroundColor: "cadetblue" }}
             className="modal-button"
             onClick={() =>
-              handleModal(
-                name,
-                <img width="100%" src={imagevideo.fields.file.url} alt={name} />
-              )
+              handleModal(name, <ImageCarousel article={article.fields} />)
             }
           >
             Image
@@ -60,6 +56,9 @@ function Post({ article }) {
           <Button
             style={{ backgroundColor: "cadetblue", marginLeft: "2px" }}
             className="modal-button"
+            onClick={() =>
+              handleModal(name, <InfoVideos url={article.fields.videos} />)
+            }
           >
             Video
           </Button>
@@ -72,6 +71,7 @@ function Post({ article }) {
           </Button>
         </CardBody>
       </Card>
+
       <Modal isOpen={modal} toggle={toggle}>
         <ModalHeader
           style={{ backgroundColor: "cadetblue", textAlign: "center" }}
@@ -80,30 +80,13 @@ function Post({ article }) {
           {modalTitle}
         </ModalHeader>
         <ModalBody>{modalContent}</ModalBody>
-        <ModalFooter>
+        <ModalFooter style={{ backgroundColor: "cadetblue" }}>
           <Button color="danger" onClick={toggle}>
             X
           </Button>
         </ModalFooter>
       </Modal>
     </div>
-    //   {/*
-    //  <div className="videos-container">
-    //   <div className="main-body">
-    //     <div className="head-file">
-    //       <h2>{name}</h2>
-    //     </div>
-    //     <p className="titles"> {description}</p>
-    //     {imagevideo && (
-    //       <img src={imagevideo.fields.file.url} className="globe-image" />
-    //     )}
-
-    //     <button className="btn-infos">Image</button>
-    //     <button className="btn-infos">Video</button>
-    //     <button className="btn-infos">Text</button>
-    //   </div>
-    // </div>
-    // */}
   );
 }
 

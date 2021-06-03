@@ -4,10 +4,15 @@ import "./videos.css";
 
 function videos({ infos }) {
   return (
-    <div className="hajj-umrah">
-      {infos.map((articles, index) => (
-        <Post article={articles} key={index} />
-      ))}
+    <div>
+      <div className=" " style={{ color: "#F0FFFF" }}>
+        .
+      </div>
+      <div className="Quick-info mt-4">
+        {infos.map((article, index) => (
+          <Post article={article} />
+        ))}
+      </div>
     </div>
   );
 }
