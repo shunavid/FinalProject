@@ -3,13 +3,20 @@
 }
 
 .tour-title {
+  color: blue;
   margin-top: 2rem;
-  color: black;
   text-align: center;
-  font-size: 1.5rem;
+  font-size: 1.8rem;
 }
 
 .first-one {
+  position: relative;
+  height: 12rem;
+  width: 18rem;
+  text-decoration: none;
+}
+
+.first-contents {
   border-radius: 5%;
   height: 10rem;
   width: 18rem;
@@ -17,12 +24,15 @@
   background-size: 100% 100%;
   background-image: url(./images.jpg);
 }
-.first-one h3 {
-  position: relative;
-  top: 30%;
-  color: white;
-}
+
 .second-one {
+  position: relative;
+  height: 12rem;
+  width: 18rem;
+  text-decoration: none;
+}
+
+.second-contents {
   border-radius: 5%;
   height: 10rem;
   width: 18rem;
@@ -31,13 +41,14 @@
   background-image: url(./wp2069204.jpg);
 }
 
-.second-one h3 {
+.third-one {
   position: relative;
-  top: 30%;
-  color: white;
+  height: 12rem;
+  width: 18rem;
+  text-decoration: none;
 }
 
-.third-one {
+.third-contents {
   border-radius: 5%;
   height: 10rem;
   width: 18rem;
@@ -46,24 +57,20 @@
   background-image: url(./Help.jpg);
 }
 
-.third-one h3 {
+.fourth-one {
   position: relative;
-  top: 30%;
-  color: white;
+  height: 12rem;
+  width: 18rem;
+  text-decoration: none;
 }
 
-.fourth-one {
+.fourth-contents {
   background-image: url(./gps.jpg);
   border-radius: 5%;
   height: 10rem;
   width: 18rem;
   border: 1px solid black;
   background-size: 100% 100%;
-}
-
-.fourth-one h3 {
-  position: relative;
-  top: 30%;
 }
 
 .content {

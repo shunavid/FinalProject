@@ -5,7 +5,7 @@ import "./videos.css";
 function videos({ infos }) {
   return (
     <div>
-      <div className=" " style={{ color: "#F0FFFF" }}>
+      <div className="text-success " style={{ color: "#007aa5" }}>
         .
       </div>
       <div className="Quick-info mt-4">

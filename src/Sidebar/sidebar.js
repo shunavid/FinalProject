@@ -17,6 +17,9 @@ function sidebar() {
       <Link className="order-list" to="/register">
         Register
       </Link>
+      <Link className="order-list" to="/login">
+        Login
+      </Link>
     </div>
   );
 }

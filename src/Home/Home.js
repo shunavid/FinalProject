@@ -9,20 +9,25 @@ function Home() {
         <div className="tour-title">
           <h2>Sky Travels & Tours Agency</h2>
         </div>
-        <div div className="contents">
+
+        <div className="contents">
           <Link className="first-one" to="/hajj">
             <h3>Hajj</h3>
+            <div className="first-contents"></div>
           </Link>
           <Link className="second-one" to="/umrah">
             <h3>Umrah</h3>
+            <div className="second-contents"></div>
           </Link>
 
           <Link className="third-one" to="help">
             <h3>Help</h3>
+            <div className="third-contents"></div>
           </Link>
 
           <Link className="fourth-one" to="/gps">
             <h3>GPS</h3>
+            <div className="fourth-contents"></div>
           </Link>
         </div>
       </div>

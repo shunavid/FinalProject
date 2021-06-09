@@ -1,0 +1,111 @@
+.umrah-title {
+  background-color: #00416a;
+  height: 20rem;
+  width: 85.5%;
+  background-size: cover;
+  margin-left: 14%;
+}
+
+.ours-title {
+  position: relative;
+  margin-top: 5rem;
+  color: white;
+  background-color: #007aa5;
+  width: 14rem;
+  height: 5rem;
+  margin-left: 16%;
+  padding: 1.5rem;
+  animation: animate 20s linear infinite;
+}
+
+.umrah-desc {
+  width: 50%;
+  margin-left: 30%;
+  margin-top: 3rem;
+  text-align: left;
+}
+
+.umrah-first {
+  background-image: url(./umrah-banner1.jpg);
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+  margin-top: 1rem;
+}
+
+.umrah-second {
+  background-image: url(./gettyimages-891971842-612x612.jpg);
+  height: 40rem;
+  width: 100%;
+  background-size: cover;
+  margin-top: 1rem;
+}
+
+/* .box-area {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.box-area li {
+  position: absolute;
+  display: block;
+  list-style: none;
+  width: 25px;
+  height: 25px;
+  background: rgba(255, 255, 255, 0.2);
+  animation: animate 20s linear infinite;
+}
+
+.box-area li:nth-child(1) {
+  left: 86%;
+  width: 80px;
+  height: 80px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(2) {
+  left: 12%;
+  width: 30px;
+  height: 30px;
+  animation-delay: 1.5s;
+  animation-duration: 1s;
+}
+.box-area li:nth-child(3) {
+  left: 70%;
+  width: 100px;
+  height: 100px;
+  animation-delay: 1.5s;
+}
+.box-area li:nth-child(4) {
+  left: 42%;
+  width: 150px;
+  height: 150px;
+  animation-delay: 0s;
+  animation-duration: 1s;
+}
+.box-area li:nth-child(5) {
+  left: 65%;
+  width: 40px;
+  height: 40px;
+  animation-delay: 0s;
+}
+.box-area li:nth-child(6) {
+  left: 15%;
+  width: 110px;
+  height: 110px;
+  animation-delay: 1.5s;
+}
+
+@keyframes animate {
+  0% {
+    transform: translateY(0) rotate(0deg);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-800px) rotate(360);
+    opacity: 0;
+  }
+} */

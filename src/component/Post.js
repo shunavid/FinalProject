@@ -73,12 +73,12 @@ function Post({ article }) {
       </Card>
 
       <Modal isOpen={modal} toggle={toggle}>
-        <ModalHeader
+        {/* <ModalHeader
           style={{ backgroundColor: "cadetblue", textAlign: "center" }}
           toggle={toggle}
         >
           {modalTitle}
-        </ModalHeader>
+        </ModalHeader> */}
         <ModalBody>{modalContent}</ModalBody>
         <ModalFooter style={{ backgroundColor: "cadetblue" }}>
           <Button color="danger" onClick={toggle}>

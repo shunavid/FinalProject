@@ -5,12 +5,13 @@ import Sidebar from "./Sidebar/sidebar";
 import Home from "./Home/Home";
 import QuickInfo from "./QuickInfo/videos";
 import Attendance from "./Attendance/attendance";
-import Register from "./Register/register";
+import Register from "./Register/Register";
 import { client } from "./Client";
 import Gps from "./component/Gps";
 import Help from "./component/Help";
-import Hajj from "./component/Hajj";
-import Umrah from "./component/Umrah";
+import Hajj from "./component/Hajj/Hajj";
+import Umrah from "./component/Umrah/Umrah";
+import Login from "./Login/Login";
 // import ImageCarousel from "./component/ImageCarousel";
 // import InfoVideos from "./component/InfoVideos";
 
@@ -22,7 +23,7 @@ function App() {
       .getEntries()
       .then((response) => {
         const { items } = response;
-        console.log(items);
+        // console.log(items);
         // console.log(items[0].fields.image[0].fields.file.url);
         setArticles(items);
       })
@@ -56,6 +57,9 @@ function App() {
           </Route>
           <Route path="/umrah">
             <Umrah />
+          </Route>
+          <Route path="/Login">
+            <Login />
           </Route>
         </Switch>
       </main>
