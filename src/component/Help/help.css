@@ -1,0 +1,30 @@
+.help-container {
+  display: flex;
+}
+
+.help-instruction {
+  height: 50rem;
+  width: 50rem;
+  margin-left: 15%;
+}
+
+.help-logo {
+  background-image: url(./design-trends-in-mobile-applications-main.jpg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 24.3%;
+  width: 44%;
+  border-radius: 8%;
+  margin-left: 50%;
+  border: 1px solid brown;
+  position: relative;
+  box-shadow: 10px 10px grey;
+}
+
+.find-me {
+  color: #1f51ff;
+  position: relative;
+  margin-top: 10rem;
+  margin-left: 50%;
+  text-shadow: 0 0 3px #ff0000;
+}

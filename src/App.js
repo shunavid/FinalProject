@@ -8,7 +8,7 @@ import Attendance from "./Attendance/attendance";
 import Register from "./Register/Register";
 import { client } from "./Client";
 import Gps from "./component/Gps";
-import Help from "./component/Help";
+import Help from "./component//Help/Help";
 import Hajj from "./component/Hajj/Hajj";
 import Umrah from "./component/Umrah/Umrah";
 import Login from "./Login/Login";
