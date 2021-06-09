@@ -6,14 +6,30 @@
   margin-left: 14%;
 }
 
-.ours-title {
+.short-notices {
+  color: white;
+  width: 50%;
+  margin-top: 3rem;
+  margin-left: 10%;
   position: relative;
-  margin-top: 5rem;
+  text-align: left;
+}
+
+.position-objects {
+  height: 20rem;
+  width: 80%;
+  margin-left: 10%;
+  display: flex;
+}
+
+.our-titles {
+  position: relative;
+  margin-top: 7rem;
   color: white;
   background-color: #007aa5;
-  width: 14rem;
+  width: 15rem;
   height: 5rem;
-  margin-left: 16%;
+  margin-left: 15%;
   padding: 1.5rem;
   animation: animate 20s linear infinite;
 }

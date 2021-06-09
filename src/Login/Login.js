@@ -1,36 +1,29 @@
 import React, { useState } from "react";
 import axios from "axios";
-import {
-  Button,
-  Form,
-  FormGroup,
-  Input,
-  // Label,
-  // FormText,
-  // Span,
-} from "reactstrap";
-function Login(article) {
-  const [admin, setAdmin] = useState(true);
-  const [entry, setEntry] = useState([]);
+import { useHistory } from "react-router-dom";
+import { Button, Form, FormGroup, Input } from "reactstrap";
+function Login({ setIsAdmin }) {
+  const [admin, setAdmin] = useState({});
 
+  const history = useHistory();
   // const handleLogin = (e) => {
   //   e.preventDefault();
   // };
-  const submitForm = (e) => {
-    e.preventDefault();
-    const adminEntry = { username: admin.username, password: admin.password };
-    setEntry([...entry, adminEntry]);
-    console.log(entry);
-  };
+  // const submitForm = (e) => {
+  //   const adminEntry = { UserName: admin.username, Password: admin.password };
+  //   setEntry([...entry, adminEntry]);
+  //   console.log(entry);
+  // };
 
   const handleLogin = (e) => {
-    // e.preventDefault();
-
+    e.preventDefault();
     axios
       .post("http://localhost:5000/api/login", admin)
-
       .then(function (response) {
-        console.log(response);
+        if (response.data.message === "Login Successfully") {
+          setIsAdmin(true);
+          history.push("/");
+        }
       });
   };
 
@@ -39,7 +32,6 @@ function Login(article) {
       <div style={{ color: "#000039" }}>.</div>
       <Form
         action=""
-        onSubmit={submitForm}
         style={{
           textAlign: "start",
           backgroundColor: "#000039",

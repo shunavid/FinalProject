@@ -6,8 +6,13 @@ function Hajj() {
   return (
     <div className="hajj-container">
       <div className="hajj-title">
-        <div className="overall">
-          <div>.</div>
+        {/* <div className="overall">  </div> */}
+        <div>.</div>
+
+        <div className="position-object">
+          <div className="our-title">
+            <h4 className="">HAJJ FACTS</h4>
+          </div>
           <div className="short-notice">
             <p>
               Dear guests, our neighbors Hajj is complete put together for you
@@ -17,9 +22,6 @@ function Hajj() {
               be sensible and as good as possible be performed . If you should
               choose us, that would be the right decision.
             </p>
-          </div>
-          <div className="our-title">
-            <h4 className="">HAJJ FACTS</h4>
           </div>
         </div>
       </div>
@@ -40,7 +42,7 @@ function Hajj() {
           in fact, there’s a whole Surah (chapter) in the Qur’an named after it!
           In this Chapter, Allah (SWT) tells us:
         </p>
-        <h4>
+        <h5>
           “We designated for Abraham the site of the House, [saying], ‘Do not
           associate anything with Me and purify My House for those who perform
           Tawaf and those who stand [in prayer] and those who bow and
@@ -52,7 +54,7 @@ function Hajj() {
           perform Tawaf around the ancient House.’ That [has been commanded],
           and whoever honours the sacred ordinances of Allah – it is best for
           him in the sight of his Lord…” (22:26-30)
-        </h4>{" "}
+        </h5>{" "}
         <br />
         <h2>2. It’s much older than 1,500 years!</h2>
         <div className="second-image"></div>
@@ -76,6 +78,19 @@ function Hajj() {
         </p>
         <h2>4. Over 2.5 million people a year go on Hajj!</h2>
         <div className="fourth-image"></div>
+        <br />
+        <p>
+          On the 10th Dhul-Hijjah, pilgrims throw stones at the pillars. This is
+          probably the longest day of the pilgrimage. On pilgrims go back to
+          Mina, they perform first rami, throwing seven pebbles at the columns
+          known as Jamaraat. It dates back to the history that at this spot in
+          Mina, the devil tried to discourage Prophet Ibrahim from heeding the
+          command. He then threw small pebbles to make him go away.
+          <br />
+          <br /> After stoning, a sacrifice of an animal is recommended.
+          Pilgrims then leave the state of Ihram and Proceed to al-Masjid
+          al-Haram in Makkah to perform Tawaf al-ifadha.
+        </p>
       </div>
     </div>
   );

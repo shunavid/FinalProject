@@ -14,8 +14,20 @@ function Umrah() {
           <li></li>
           <li></li>
         </ul> */}
-        <div className="ours-title">
-          <h4 className="">UMRAH FACTS</h4>
+        <div className="position-objects">
+          <div className="our-titles">
+            <h4 className="">UMRAH FACTS</h4>
+          </div>
+          <div className="short-notices">
+            <p>
+              Dear guests, our neighbors Umrah is complete put together for you
+              first hand.
+              <br /> We guarantee you all services contractually, because this
+              is based on a confidential mutuality. After all, the Hajj should
+              be sensible and as good as possible be performed . If you should
+              choose us, that would be the right decision.
+            </p>
+          </div>
         </div>
       </div>
       <div className="umrah-desc">

@@ -17,6 +17,7 @@ import Login from "./Login/Login";
 
 function App() {
   const [articles, setArticles] = useState([]);
+  const [isAdmin, setIsAdmin] = useState(false);
 
   useEffect(() => {
     client
@@ -31,15 +32,17 @@ function App() {
   }, []);
   return (
     <div className="App">
-      <Sidebar />
+      <Sidebar isAdmin={isAdmin} />
       <main>
         <Switch>
           <Route exact path="/">
             <Home />
           </Route>
-          <Route path="/attendance">
-            <Attendance />
-          </Route>
+          {isAdmin && (
+            <Route path="/attendance">
+              <Attendance />
+            </Route>
+          )}
           <Route path="/quickInfo">
             <QuickInfo infos={articles} />
           </Route>
@@ -58,9 +61,11 @@ function App() {
           <Route path="/umrah">
             <Umrah />
           </Route>
-          <Route path="/Login">
-            <Login />
-          </Route>
+          {!isAdmin && (
+            <Route path="/Login">
+              <Login setIsAdmin={setIsAdmin} />
+            </Route>
+          )}
         </Switch>
       </main>
     </div>
